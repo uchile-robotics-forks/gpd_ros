@@ -153,6 +153,7 @@ void GraspDetectionNode::cloud_callback(const sensor_msgs::PointCloud2& msg)
 
     Eigen::Matrix3Xd view_points(3,1);
     view_points.col(0) = view_point_;
+    //view_points << 0.0, 0.0, 0.0;
 
     if (msg.fields.size() == 6 && msg.fields[3].name == "normal_x" && msg.fields[4].name == "normal_y"
       && msg.fields[5].name == "normal_z")
