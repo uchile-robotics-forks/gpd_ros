@@ -93,3 +93,8 @@ target_link_libraries(${PROJECT_NAME}_grasp_plotter
 target_link_libraries(${PROJECT_NAME}_grasp_messages
                       ${GPD_LIB}
                       ${catkin_LIBRARIES})
+                      
+install(DIRECTORY
+  launch/
+  DESTINATION /opt/ros/melodic/lib/python2.7/dist-packages/gpd_ros/
+)
