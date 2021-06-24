@@ -95,6 +95,6 @@ target_link_libraries(${PROJECT_NAME}_grasp_messages
                       ${catkin_LIBRARIES})
                       
 install(DIRECTORY
-  .
+  launch/
   DESTINATION /opt/ros/melodic/lib/python2.7/dist-packages/gpd_ros
 )
