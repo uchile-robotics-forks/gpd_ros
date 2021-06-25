@@ -1,5 +1,5 @@
 <launch>
-  <node name="detect_grasps" pkg="gpd_ros" type="grasp_detection_node.cpp" output="screen">
+  <node name="detect_grasps" pkg="gpd_ros" type="grasp_detection_node.cpp" output="screen" />
 
     <!-- If sequential importance sampling is used (default: false) -->
 <!--
