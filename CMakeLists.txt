@@ -99,3 +99,11 @@ install(DIRECTORY
   src/
   DESTINATION /opt/ros/melodic/lib/python2.7/dist-packages/gpd_ros
 )
+
+install(PROGRAMS
+  src/gpd_ros/grasp_detection_server.cpp
+  src/gpd_ros/grasp_detection_node.cpp
+  src/gpd_ros/grasp_messages.cpp
+  src/gpd_ros/grasp_plotter.cpp
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
